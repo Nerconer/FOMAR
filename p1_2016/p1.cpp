@@ -41,7 +41,7 @@ void getAngles(vector<vector<double> > matrix)
     if(sin(alpha)*cos(beta) - matrix[1][0] < 0.0001);
     else alpha *= -1;
     gamma = acos(matrix[2][2]/cos(beta));
-    if (sin(gamma)*cos(beta) - matrix[2][1] < 0.01);
+    if (sin(gamma)*cos(beta) - matrix[2][1] < 0.0001);
     else gamma = pi - gamma;
 
     writeAngles(alpha, beta, gamma);
