@@ -83,7 +83,7 @@ light_source{ <-200,200,200>
 light_source{ <0,200,-400>
               color White}
 
-#fopen Rij "rijxcolumnes" read
+#fopen Rij "final/rijxcolumnes.15" read
 #read (Rij,r11,r21,r31,r12,r22,r32,r13,r23,r33)
 
 #fopen Fis "fisef.out" read
@@ -98,12 +98,9 @@ object {SRob matrix < r11,r21,r31,r12,r22,r32,r13,r23,r33, 0.0, 0.0, 0.0 > }
 // 
 
 
-//#declare Factor=sin(pi*clock)*sin(pi*clock);
-#declare Factor=clock;
+#declare Factor=sin(pi*clock)*sin(pi*clock);
+//#declare Factor=clock;
 
 object{Roda_dentada rotate Factor*f1x*x rotate Factor*f1y*y rotate Factor*f1z*z}
 
 object {SRef rotate Factor*f1x*x rotate Factor*f1y*y rotate Factor*f1z*z}
-
-
-

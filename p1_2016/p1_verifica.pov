@@ -84,7 +84,7 @@ light_source{ <-200,200,200>
 light_source{ <0,200,-400>
               color White}
 
-#fopen Rij "rijxcolumnes" read
+#fopen Rij "final/rijxcolumnes.15" read
 #read (Rij,r11,r21,r31,r12,r22,r32,r13,r23,r33)
 
 #fopen Fis "fisef.out" read
